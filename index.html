@@ -10,85 +10,135 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, #f0f8f5, #d9e8e3);
-            color: #003d2e;
+            background-color: #f9fafc;
+            color: #2c3e50;
         }
 
+        /* Header Styling */
         header {
-            background-color: #004731;
-            color: #fff;
-            padding: 20px;
+            background: linear-gradient(135deg, #1a5e20, #2e7d32);
+            color: white;
+            padding: 20px 40px;
             text-align: center;
-            font-size: 1.8em;
-            font-weight: bold;
         }
 
-        .container {
+        header h1 {
+            font-size: 2em;
+            margin: 0;
+            font-family: 'Georgia', serif;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 0.9em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content */
+        main {
             margin: 30px auto;
-            padding: 20px;
             max-width: 800px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
-        ul {
+        main h2 {
+            font-size: 1.8em;
+            color: #1a5e20;
+            border-bottom: 2px solid #c8e6c9;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        main ul {
             list-style: none;
             padding: 0;
         }
 
-        li {
+        main ul li {
             margin: 10px 0;
             padding: 10px;
-            background: #e8f5e9;
-            border-left: 5px solid #2e7d32;
-            border-radius: 5px;
-            transition: background 0.3s ease;
+            border-radius: 4px;
+            background-color: #f1f8e9;
+            border-left: 4px solid #2e7d32;
+            transition: background-color 0.3s;
         }
 
-        li:hover {
-            background: #c8e6c9;
+        main ul li:hover {
+            background-color: #dcedc8;
         }
 
-        a {
+        main ul li a {
             text-decoration: none;
-            color: #004731;
+            color: #2e7d32;
             font-weight: bold;
         }
 
-        a:hover {
-            color: #2e7d32;
+        main ul li a:hover {
+            text-decoration: underline;
         }
 
+        /* Footer Styling */
         footer {
             text-align: center;
-            padding: 10px;
-            margin-top: 30px;
-            background-color: #004731;
-            color: #fff;
+            margin-top: 40px;
+            padding: 10px 0;
+            background: #1a5e20;
+            color: white;
             font-size: 0.9em;
+        }
+
+        footer a {
+            color: #c8e6c9;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header>Twine Stories Collection</header>
-    <div class="container">
+    <header>
+        <h1>Twine Stories Collection</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Explore the Stories</h2>
         <ul>
-            <li><a href="s1-disability-discrimination-ordinance.html">Story 1: Disability Discrimination Ordinance</a></li>
-            <li><a href="s2-mismanagement-tour-fees-students.html">Story 2: Mismanagement of Tour Fees</a></li>
-            <li><a href="s3-engagement-outside-paid-work.html">Story 3: Engagement of Outside Paid Work</a></li>
-            <li><a href="S4-admission-interview integrity.html">Story 4: Admission Interview Integrity</a></li>
-            <li><a href="s5-doxxing-social-media.html">Story 5: Doxxing on Social Media</a></li>
-            <li><a href="s6-defamatory-remarks-different-races.html">Story 6: Defamatory Remarks on Different Races</a></li>
-            <li><a href="s7-unnecessary-force-discipline.html">Story 7: Unnecessary Force to Handle Student Discipline</a></li>
-            <li><a href="s8-sex-discrimination.html">Story 8: Guidelines on Teachers' Professional Conduct and Sex Discrimination</a></li>
-            <li><a href="s9-handling-single-parent-families.html">Story 9: Handling Students from Single-Parent Families</a></li>
-            <li><a href="s10-handling-remarks-national-flags.html">Story 10: Handling Students' Remarks on National Flags</a></li>
-            <li><a href="s11-safety-lessons-activities.html">Story 11: Handling Students' Safety on Lessons and Activities</a></li>
+            <li><a href="S1-disability-discrimination-ordinance.html">Story 1: Disability Discrimination Ordinance</a></li>
+            <li><a href="S2-mismanagement-tour-fees-students.html">Story 2: Mismanagement of Tour Fees</a></li>
+            <li><a href="S3-engagement-outside-paid-work.html">Story 3: Engagement of Outside Paid Work</a></li>
+            <li><a href="S4-admission-interview-integrity.html">Story 4: Admission Interview Integrity</a></li>
+            <li><a href="S5-doxxing-social-media.html">Story 5: Doxxing on Social Media</a></li>
+            <li><a href="S6-defamatory-remarks-different-races.html">Story 6: Defamatory Remarks on Different Races</a></li>
+            <li><a href="S7-unnecessary-force-discipline.html">Story 7: Unnecessary Force and Punishment</a></li>
+            <li><a href="S8-sex-discrimination.html">Story 8: Guidelines on Teachers' Professional Conduct and Sex Discrimination</a></li>
+            <li><a href="S9-handling-single-parent-families.html">Story 9: Handling Students from Single-Parent Families</a></li>
+            <li><a href="S10-handling-remarks-national-flags.html">Story 10: Handling Students' Remarks on National Flags</a></li>
+            <li><a href="S11-safety-lessons-activities.html">Story 11: Handling Students' Safety on Lessons</a></li>
         </ul>
-    </div>
+    </main>
+
     <footer>
-        © 2024 Twine Stories Project. All rights reserved.
+        &copy; 2024 Twine Stories Collection. All Rights Reserved. | <a href="#">Privacy Policy</a>
     </footer>
 </body>
 </html>
