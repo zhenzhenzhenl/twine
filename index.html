@@ -5,140 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twine Stories Collection</title>
     <style>
-        /* General Styles */
+        /* Background Image */
         body {
+            background: url('https://hkuportal.hku.hk/cas-login-2022/hku-logo.png') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9fafc;
-            color: #2c3e50;
+            color: #333;
         }
 
-        /* Header Styling */
-        header {
-            background: linear-gradient(135deg, #1a5e20, #2e7d32);
-            color: white;
-            padding: 20px 40px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2em;
-            margin: 0;
-            font-family: 'Georgia', serif;
-        }
-
-        nav {
-            margin-top: 10px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-            font-size: 0.9em;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* Main Content */
-        main {
-            margin: 30px auto;
-            max-width: 800px;
+        /* Page Container */
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            margin: 50px auto;
             padding: 20px;
-            background: white;
+            max-width: 900px;
             border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        main h2 {
-            font-size: 1.8em;
-            color: #1a5e20;
-            border-bottom: 2px solid #c8e6c9;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+        /* Title Styling */
+        h1 {
             text-align: center;
+            color: #156c2e;
+            margin-bottom: 30px;
         }
 
-        main ul {
-            list-style: none;
+        /* Links Styling */
+        .story-list {
+            list-style-type: none;
             padding: 0;
         }
 
-        main ul li {
+        .story-list li {
             margin: 10px 0;
-            padding: 10px;
-            border-radius: 4px;
-            background-color: #f1f8e9;
-            border-left: 4px solid #2e7d32;
-            transition: background-color 0.3s;
         }
 
-        main ul li:hover {
-            background-color: #dcedc8;
-        }
-
-        main ul li a {
+        .story-list a {
             text-decoration: none;
-            color: #2e7d32;
+            color: #156c2e;
             font-weight: bold;
         }
 
-        main ul li a:hover {
+        .story-list a:hover {
             text-decoration: underline;
+            color: #0a5c1c;
         }
 
         /* Footer Styling */
-        footer {
+        .footer {
             text-align: center;
             margin-top: 40px;
-            padding: 10px 0;
-            background: #1a5e20;
-            color: white;
-            font-size: 0.9em;
+            padding: 20px;
+            background: #f0f7f2;
+            border-radius: 8px;
         }
 
-        footer a {
-            color: #c8e6c9;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
+        .footer img {
+            width: 120px;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <header>
+    <div class="container">
         <h1>Twine Stories Collection</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
-
-    <main>
-        <h2>Explore the Stories</h2>
-        <ul>
+        <ul class="story-list">
             <li><a href="S1-disability-discrimination-ordinance.html">Story 1: Disability Discrimination Ordinance</a></li>
             <li><a href="S2-mismanagement-tour-fees-students.html">Story 2: Mismanagement of Tour Fees</a></li>
             <li><a href="S3-engagement-outside-paid-work.html">Story 3: Engagement of Outside Paid Work</a></li>
             <li><a href="S4-admission-interview-integrity.html">Story 4: Admission Interview Integrity</a></li>
             <li><a href="S5-doxxing-social-media.html">Story 5: Doxxing on Social Media</a></li>
             <li><a href="S6-defamatory-remarks-different-races.html">Story 6: Defamatory Remarks on Different Races</a></li>
-            <li><a href="S7-unnecessary-force-discipline.html">Story 7: Unnecessary Force and Punishment</a></li>
+            <li><a href="S7-unnecessary-force-discipline.html">Story 7: Unnecessary Force to Handle Student Discipline</a></li>
             <li><a href="S8-sex-discrimination.html">Story 8: Guidelines on Teachers' Professional Conduct and Sex Discrimination</a></li>
             <li><a href="S9-handling-single-parent-families.html">Story 9: Handling Students from Single-Parent Families</a></li>
             <li><a href="S10-handling-remarks-national-flags.html">Story 10: Handling Students' Remarks on National Flags</a></li>
-            <li><a href="S11-safety-lessons-activities.html">Story 11: Handling Students' Safety on Lessons</a></li>
+            <li><a href="S11-safety-lessons-activities.html">Story 11: Handling Students' Safety on Lessons and Activities</a></li>
         </ul>
-    </main>
-
-    <footer>
-        &copy; 2024 Twine Stories Collection. All Rights Reserved. | <a href="#">Privacy Policy</a>
-    </footer>
+        <div class="footer">
+            <p>© 2024 The University of Hong Kong. All Rights Reserved.</p>
+            <img src="https://portali.hku.hk/cas-login-2022/hku-logo.png" alt="HKU Logo">
+        </div>
+    </div>
 </body>
 </html>
